@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Thomson e/m Ratio</title>
+</head>
+<body>
+<nav>
+  <a href="index.html">Home</a>
+  > Thomson e/m Ratio
+</nav>
+
+<h1>The Charge-to-Mass (e/m) Ratio of the Electron</h1>
+<p>Originally discovered by physicist J. J. Thomson who published his findings in 1897.</p>
+<h2>Thomson's Original Method</h2>
+<p>In Thomson's 1897 paper, he was originally searching for the mass-to-charge ratio of particles contained within cathode rays (nobody knew they were electrons yet.) He ascertained the ratio using two independent methods. His first method involved deflection of the rays using a magnetic field. The second method involved deflection with an electric field, and then using a magnetic field to cancel out that deflection (thus allowing us to equate magnetic force with electrostatic force). If you would like to read the original paper, you can download a .pdf version of it <a href="https://commons.wikimedia.org/wiki/File:Cathode_Rays.pdf">here</a> or read it entirely in your web browser <a href="https://web.lemoyne.edu/giunta/thomson1897.html">here</a>.</p>
+
+<center>
+<figure>
+  <img src="images/thomson_tube.jpg" width="800"/>
+  <figcaption>A picture of Thomson's REAL cathode ray tube! <a href="https://cudl.lib.cam.ac.uk/view/PH-CAVENDISH-P-00040/1">From the University of Cambridge's Digital Library</a></figcaption>
+</figure>
+</center>
+
+<h2>Derivation</h2>
+
+<p>Let's begin with a simplified drawing and define the relevant geometric variables.</p>
+
+<center>
+<img src="images/simple_thomson.jpg" />
+</center>
+
+<ul>
+  <li>separation of the two charged plates <i>d</i></li>
+  <li>length of the charged plates <i>l</i></li>
+  <li>angle between beam path and horizontal axis &theta;</li>
+  <li>distance from center of the charged plates to the screen <i>L</i></li>
+  <li>difference between deflected beam path and straight-line path <i>y</i></li>
+</ul>
+
+<p> The electric field between two charged parallel plates is:</p>
+<math display="block">
+  <mi>E</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mi>V</mi>
+    <mi>d</mi>
+  </mfrac>
+</math>
+
+<p> For as long as the electrons are traveling between the two plates, they accelerate in the y-direction due to the electrostatic force:</p>
+<math display="block">
+  <msub>
+    <mi>F</mi>
+    <mi>y</mi>
+  </msub>
+  <mo>=</mo>
+    <msub>
+    <mi>F</mi>
+    <mi>E</mi>
+  </msub>
+</math>
+
+<math display="block">
+  <mi>m</mi>
+  <msub>
+    <mi>a</mi>
+    <mi>y</mi>
+  </msub>
+  <mo>=</mo>
+  <mi>q</mi>
+  <mi>E</mi>
+</math>
+  
+<math display="block">
+  <msub>
+    <mi>a</mi>
+    <mi>y</mi>
+  </msub>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>q</mi>
+      <mi>V</mi>
+    </mrow>
+    <mrow>
+      <mi>m</mi>
+      <mi>d</mi>
+    </mrow>
+  </mfrac>
+</math>
+
+<p>How long will electrons be traveling between the two plates? It depends on the initial horizontal velocity:</p>
+<math display="block">
+  <mi>t</mi><mo>=</mo><mfrac><mi>l</mi><mi>v</mi></mfrac>
+</math>
+
+<p>Initially, the electrons only had a horizontal velocity. As they traveled between the charged plates, the electrostatic force accelerated them vertically along the y-axis. Now, they have acquired a vertical velocity component:</p>
+<math display="block">
+  <msub>
+    <mi>v</mi>
+    <mi>y</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>a</mi>
+    <mi>y</mi>
+  </msub>
+  <mi>t</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>q</mi>
+      <mi>V</mi>
+      <mi>l</mi>
+    </mrow>
+    <mrow>
+      <mi>m</mi>
+      <mi>d</mi>
+      <mi>v</mi>
+    </mrow>
+  </mfrac>
+</math>
+
+<p>So, we have the vertical velocity of the cathode rays after they leave the area between the charged plates. This results in a total velocity vector with a vertical component <i>v<sub>y</sub></i> and a horizontal component <i>v</i> which was the initial horizontal velocity of the cathode ray. From SOH CAH TOA, we know there is the following trigonometric relationship between <i>v</i> and <i>v<sub>y</sub></i>:</p>
+<center>
+  <img src="images/v_vy.jpg" width="300">
+</center>
+<math display="block">
+  <mi>tan</mi>
+  <mi>&#x3b8;</mi>
+  <mo>=</mo>
+  <mfrac>
+    <msub>
+      <mi>v</mi>
+      <mi>y</mi>
+    </msub>
+    <mi>v</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>q</mi>
+      <mi>V</mi>
+      <mi>l</mi>
+    </mrow>
+    <mrow>
+      <mi>m</mi>
+      <mi>d</mi>
+      <msup>
+        <mi>v</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+</math>
+
+<p>Now, refer back to the initial diagram for the entire setup. Notice that there is another trigonometric relationship present, between the beam deflection <i>y</i> and the distance from the center of the charged plates to the screen <i>L</i>, giving us:</p>
+<math display="block">
+  <mi>tan</mi>
+  <mi>&#x3b8;</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mi>y</mi>
+    <mi>L</mi>
+  </mfrac>
+  <mo>&#x21d2;</mo>
+  <mi>y</mi>
+  <mo>=</mo>
+  <mi>L</mi>
+  <mi>tan</mi>
+  <mi>&#x3b8;</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>L</mi>
+      <mi>q</mi>
+      <mi>V</mi>
+      <mi>l</mi>
+    </mrow>
+    <mrow>
+      <mi>m</mi>
+      <mi>d</mi>
+      <msup>
+        <mi>v</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+</math>
+
+<p>
+After all this work, we still can't calculate <i>q/m</i> because we don't know what the velocity <i>v</i> is. What do we do? Well, it is at THIS point that Thomson applied a magnetic field <i>B</i> perpendicular to the direction of the electric field. Based on the right hand rule (thumb pointing in the direction of the cathode ray velocity, pointer finger in the direction of B, and middle finger showing the direction of the magnetic force), we see that the negatively charged particles will be deflected down. Thomson tuned the magnetic field so the downward magnetic force <i>F<sub>B</msub></i> would cancel out the upward <i>F<sub>E</sub></i> (the two forces then being EQUAL in magnitude) and the beam returned to its straight line path.
+</p>
+
+<math display="block">
+  <msub>
+    <mi>F</mi>
+    <mi>E</mi>
+  </msub>
+  <mo>=</mo>
+  <msub>
+    <mi>F</mi>
+    <mi>B</mi>
+  </msub>
+</math>
+<math display="block">
+  <mi>q</mi>
+  <mi>E</mi>
+  <mo>=</mo>
+  <mi>q</mi>
+  <mi>v</mi>
+  <mi>B</mi>
+</math>
+<math display="block">
+  <mi>E</mi>
+  <mo>=</mo>
+  <mi>v</mi>
+  <mi>B</mi>
+</math>
+<math display="block">
+  <mi>v</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mi>E</mi>
+    <mi>B</mi>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mi>V</mi>
+    <mrow>
+      <mi>d</mi>
+      <mi>B</mi>
+    </mrow>
+  </mfrac>
+</math>
+
+<p>Substitute this value for <i>v</i> into the equation for <i>y</i> from before:
+
+<math display="block">
+  <mi>y</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>L</mi>
+      <mi>q</mi>
+      <mi>V</mi>
+      <mi>l</mi>
+    </mrow>
+    <mrow>
+      <mi>m</mi>
+      <mi>d</mi>
+      <mo>(</mo>
+      <mfrac>
+        <mi>V</mi>
+        <mrow>
+          <mi>d</mi>
+          <mi>B</mi>
+        </mrow>
+      </mfrac>
+      <msup>
+        <mo>)</mo>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>L</mi>
+      <mi>q</mi>
+      <mi>V</mi>
+      <mi>l</mi>
+      <msup>
+        <mi>d</mi>
+        <mn>2</mn>
+      </msup>
+      <msup>
+        <mi>B</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mi>m</mi>
+      <mi>d</mi>
+      <msup>
+        <mi>V</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+  </mfrac>
+  <mo>=</mo>
+  <mfrac>
+    <mrow>
+      <mi>L</mi>
+      <mi>q</mi>
+      <mi>l</mi>
+      <mi>d</mi>
+      <msup>
+        <mi>B</mi>
+        <mn>2</mn>
+      </msup>
+    </mrow>
+    <mrow>
+      <mi>m</mi>
+      <mi>V</mi>
+    </mrow>
+  </mfrac>
+</math>
+
+<p>We're home free! Just isolate the <i>q/m</i> and replace the general charge symbol <i>q</i> with the charge of an electron <i>e</i>:
+
+<center>
+<table border="1">
+  <tr>
+    <td>
+      <math mathsize="200%">
+        <mfrac>
+          <mi>e</mi>
+          <mi>m</mi>
+        </mfrac>
+        <mo>=</mo>
+        <mfrac>
+          <mrow>
+            <mi>y</mi>
+            <mi>V</mi>
+          </mrow>
+          <mrow>
+            <mi>L</mi>
+            <mi>l</mi>
+            <mi>d</mi>
+            <msup>
+              <mi>B</mi>
+              <mn>2</mn>
+            </msup>
+          </mrow>
+        </mfrac>
+      </math>
+    </td>
+  </tr>
+</table>
+</center>
+
+<h2>Conclusion</h2>
+<p>And there you have it! The charge-to-mass ratio calculated with Thomson's original cathode ray tube setup, as described in the 1897 paper. (Actually, he was trying to ascertain the mass-to-charge ratio, but it's the same thing basically.) Hopefully, you found this helpful. Not long after this, in 1909, Robert Milikan began his famous oil drop experiment and, using the known e/m ratio, figured out the charge of a single electron, which we call the "elementary charge"! On top of that, he realized that charge was quantized: the charge of any object is always some multiple of the elementary charge, never a fraction of it! (Quarks kind of messed that up.)</p>
+</body>
+</html>
