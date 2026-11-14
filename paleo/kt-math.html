@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8"/>
+  <title>Asteroid Math</title>
+</head>
+<body>
+
+<nav>
+  <a href="..">Home</a>
+  > <a href=".">Paleontology</a>
+  > The Math Behind the Original Asteroid Impact Hypothesis
+</nav>
+
+<main>
+<h1>The Math Behind the Original Asteroid Impact Hypothesis</h1>
+<p><i>This is an article I originally wrote for the New York Paleontological Society, published in an early 2026 newsletter.</i></p>
+
+<p>You already know that dinosaurs most likely went extinct because an asteroid hit the Earth 66 million years ago. Did you ever see the math and read the logic behind the initial hypothesis? I only found out recently while reading Michael Benton's 2020 book, <cite>Dinosaurs Rediscovered</cite>, and was fascinated. I'd like to go over it with all of you and fill in the steps that were skipped in both Benton's book and the original 1980 paper.</p>
+
+<h2>The Background</h2>
+<p>Here is a quick, simplified recap of how the story goes. Shortly before 1980, Luis Alvarez, a Nobel Prize-winning physicist, had just invented a way to measure small quantities of iridium using a method called "neutron activation analysis." His geologist son, Walter, thought this technology could be used to date rocks. A problem with dating rock layers is that the thickness of a layer doesn't necessarily tell you anything about how long it took for the layer to be deposited. A thick layer doesn't always take longer to form than a thin layer. However, iridium is special because small quantities rain down from space onto Earth's surface and accumulate at a steady rate. The general idea, then, is that you should be able to tell how long it took for a rock layer to be deposited based on its concentration of iridium.</p>
+
+<p>Walter decided that they should use this technique on the Bottaccione section of the Umbrian Apennines in Gubbio, Italy, where limestone exposures of the latest Cretaceous and earliest Paleogene were known. Iridium levels were similar near the top and bottom of the section, about 0.3 parts per billion. However, when they measured the 1-cm layer marking the Cretaceous-Paleogene boundary, the iridium level was 9.1 parts per billion, or 30 times more than normal! Now, the Alvarezes <em>COULD</em> have interpreted this to mean that this 1-cm layer was deposited 30 times slower than average, <strong>but they instead considered the possibility that this enormous amount of iridium was deposited very rapidly in a single catastrophic event.</strong></p>
+
+<h2>The Math</h2>
+<p>On page 262, we are presented with the formula:</p>
+
+<math display="block">
+  <mi>M</mi>
+  <mo>=</mo>
+  <mn>0.22</mn>
+  <mo>&it;</mo>
+  <mi>f</mi>
+  <mo lspace="0" rspace="0">/</mo>
+  <mi>s</mi>
+  <mo>&it;</mo>
+  <mi>A</mi>
+</math>
+
+<p>While Benton's explanation of the variables was sound, the equation shown in the book was wrong and no derivation was provided, so I sought out the original paper (which you can read <a href="https://courses.seas.harvard.edu/climate/eli/Courses/EPS281r/Sources/KT-boundary/3-Alvarez-Alvarez-etal-1980.pdf">here</a>). Here is the math and logic behind the hypothesis, laid out step-by-step.</p>
+
+<p>First, a list of quantities that were known ahead of time:</p>
+
+<ul>
+  <li><var>s</var> = surface density of iridium at Gubbio, 8&times;10<sup>&minus;9</sup> g/cm<sup>2</sup></li>
+  <li><var>r</var> = radius of the Earth. It appears Alvarez estimated this to be 6,000 km. Nowadays, the mean radius of the Earth is reported to be 6,371 km, but we will go with 6,000.</li>
+  <li>0.22 = the "Krakatoa fraction", or, the fraction of dust which entered the stratosphere and was uniformly deposited over the entire surface of the Earth after Krakatoa erupted in 1883. Relevant for calculating how much iridium from the asteroid was able to spread out and fall over the entirety of Earth.</li>
+  <li><var>f</var> = iridium fractional abundance in a carbonaceous chondrite meteorite, 0.5&times;10<sup>&minus;6</sup></li>
+  <li><var>&rho;</var> = density of a meteorite, 2.2 g/cm<sup>3</sup></li>
+</ul>
+
+<p>Assuming iridium was deposited over the surface of the Earth, we need to know what the surface area <var>A</var> even is:</p>
+
+<math display="block">
+  <mi>A</mi>
+  <mo>=</mo>
+  <mn>4</mn>
+  <mo>&it;</mo>
+  <mi>&pi;</mi>
+  <mo>&it;</mo>
+  <msup>
+    <mi>r</mi>
+    <mn>2</mn>
+  </msup>
+  <mo>=</mo>
+  <mn>4</mn>
+  <mo>&it;</mo>
+  <mi>&pi;</mi>
+  <mo>&it;</mo>
+  <msup>
+    <mrow>
+      <mo>(</mo>
+      <mn>6000</mn>
+      <mo>&it;</mo>
+      <mi>km</mi>
+      <mo>)</mo>
+    </mrow>
+    <mn>2</mn>
+  </msup>
+  <mo>=</mo>
+  <mn>4.52</mn>
+  <mo>&times;</mo>
+  <msup>
+    <mn>10</mn>
+    <mn>18</mn>
+  </msup>
+  <mo>&it;</mo>
+  <msup>
+    <mi>cm</mi>
+    <mn>2</mn>
+  </msup>
+</math>
+
+<p>The units were changed from km to cm so they would math the units of the other quantities listed above. Now how much iridium was deposited around the world? Multiply the surface area of the Earth <i>A</i> by the surface concentration of iridium measured in the Gubbio layer <var>s</var> to find <var>m<sub>1</sub></var>, the mass of iridium deposited:</p>
+
+<math display="block">
+  <msub>
+    <mi>m</mi>
+    <mn>1</mn>
+  </msub>
+  <mo>=</mo>
+  <mi>s</mi>
+  <mo>&it;</mo>
+  <mi>A</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo>(</mo>
+    <mn>8</mn>
+    <mo>&times;</mo>
+    <msup>
+      <mn>10</mn>
+      <mrow>
+        <mo>&minus;</mo>
+        <mn>9</mn>
+      </mrow>
+    </msup>
+    <mo>&it;</mo>
+    <mi mathvariant="normal">g</mi>
+    <mo>/</mo>
+    <msup>
+      <mi>cm</mi>
+      <mn>2</mn>
+    </msup>
+    <mo>)</mo>
+  </mrow>
+  <mrow>
+    <mo>(</mo>
+    <mn>4.52</mn>
+    <mo>&times;</mo>
+    <msup>
+      <mn>10</mn>
+      <mn>18</mn>
+    </msup>
+    <mo>&it;</mo>
+    <msup>
+      <mi>cm</mi>
+      <mn>2</mn>
+    </msup>
+    <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mn>3.62</mn>
+  <mo>&times;</mo>
+  <msup>
+    <mn>10</mn>
+    <mn>10</mn>
+  </msup>
+  <mo>&it;</mo>
+  <mi mathvariant="normal">g</mi>
+</math>
+
+<p>Keep in mind that only the iridium launched into the stratosphere after the impact was likely to be distributed over the entirety of Earth's surface. Luis Alvarez assumed that 22% of it would do so, because that's how much material from the 1883 Krakatoa eruption reached the stratosphere. So now we have to divide <var>m<sub>1</sub></var> by 0.22 to find the mass of iridium originally in the meteorite, <var>m<sub>2</sub></var>:</p>
+
+<math display="block">
+  <msub>
+    <mi>m</mi>
+    <mn>2</mn>
+  </msub>
+  <mo>=</mo>
+  <mrow>
+    <mo>(</mo>
+    <mn>3.62</mn>
+    <mo>&times;</mo>
+    <msup>
+      <mn>10</mn>
+      <mn>10</mn>
+    </msup>
+    <mo>&it;</mo>
+    <mi mathvariant="normal">g</mi>
+    <mo>)</mo>
+  </mrow>
+  <mo>/</mo>
+  <mn>0.22</mn>
+  <mo>=</mo>
+  <mn>1.65</mn>
+  <mo>&times;</mo>
+  <msup>
+    <mn>10</mn>
+    <mn>11</mn>
+  </msup>
+  <mo>&it;</mo>
+  <mi mathvariant="normal">g</mi>
+</math>
+
+<p>So there were 165,000 metric tons (tonnes) of iridium in that meteorite. However, the entire thing was probably 2 million times heavier than that! Divide <var>m<sub>2</sub></var> by <var>f</var> to find the total mass of the meteorite, <var>M</var>:</p>
+
+<math display="block">
+  <mi>M</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo>(</mo>
+    <mn>1.65</mn>
+    <mo>&times;</mo>
+    <msup>
+      <mn>10</mn>
+      <mn>11</mn>
+    </msup>
+    <mo>&it;</mo>
+    <mi mathvariant="normal">g</mi>
+    <mo>)</mo>
+  </mrow>
+  <mo>/</mo>
+  <mrow>
+    <mo>(</mo>
+    <mn>0.5</mn>
+    <mo>&times;</mo>
+    <msup>
+      <mn>10</mn>
+      <mrow>
+        <mo>&minus;</mo>
+        <mn>6</mn>
+      </mrow>
+    </msup>
+    <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mn>3.29</mn>
+  <mo>&times;</mo>
+  <msup>
+    <mn>10</mn>
+    <mn>17</mn>
+  </msup>
+  <mo>&it;</mo>
+  <mi mathvariant="normal">g</mi>
+</math>
+
+<p>In other words, the asteroid had a mass of 329 billion tonnes. How do we calculate diameter from mass? Given mass <var>M</var> and density <var>&rho;</var>, we can find volume <var>V</var> by taking mass and dividing by the density:</p>
+
+<math display="block">
+  <mi>V</mi>
+  <mo>=</mo>
+  <mrow>
+    <mo>(</mo>
+    <mn>3.29</mn>
+    <mo>&times;</mo>
+    <msup>
+      <mn>10</mn>
+      <mn>17</mn>
+    </msup>
+    <mo>&it;</mo>
+    <mi mathvariant="normal">g</mi>
+    <mo>)</mo>
+  </mrow>
+  <mo>/</mo>
+  <mrow>
+    <mo>(</mo>
+    <mn>2.2</mn>
+    <mo>&it;</mo>
+    <mi mathvariant="normal">g</mi>
+    <mo lspace="0" rspace="0">/</mo>
+    <msup>
+      <mi>cm</mi>
+      <mn>3</mn>
+    </msup>
+    <mo>)</mo>
+  </mrow>
+  <mo>=</mo>
+  <mn>1.50</mn>
+  <mo>&times;</mo>
+  <msup>
+    <mn>10</mn>
+    <mn>17</mn>
+  </msup>
+  <mo>&it;</mo>
+  <msup>
+    <mi>cm</mi>
+    <mn>3</mn>
+  </msup>
+</math>
+
+<p>And finally, we can find the radius of a sphere from its volume (no, an asteroid isn't shaped like a perfect sphere, but to a physicist, it's "close enough"):</p>
+
+<math display="block">
+  <mi>V</mi>
+  <mo>=</mo>
+  <mfrac>
+    <mn>4</mn>
+    <mn>3</mn>
+  </mfrac>
+  <mo>&it;</mo>
+  <mi>&pi;</mi>
+  <mo>&it;</mo>
+  <msup>
+    <mi>r</mi>
+    <mn>3</mn>
+  </msup>
+  <mo>&rarr;</mo>
+  <mi>r</mi>
+  <mo>=</mo>
+  <mroot>
+    <mrow>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mn>3</mn>
+        <mo>&it;</mo>
+        <mi>V</mi>
+        <mo stretchy="false">)</mo>
+      </mrow>
+      <mo>/</mo>
+      <mrow>
+        <mo stretchy="false">(</mo>
+        <mn>4</mn>
+        <mo>&it;</mo>
+        <mi>&pi;</mn>
+        <mo stretchy="false">)</mo>
+      </mrow>
+    </mrow>
+    <mn>3</mn>
+  </mroot>
+  <mo>=</mo>
+  <mn>3.3</mn>
+  <mo>&times;</mo>
+  <msup>
+    <mn>10</mn>
+    <mn>5</mn>
+  </msup>
+  <mo>&it;</mo>
+  <mi>cm</mi>
+</math>
+
+That's equivalent to a radius of 3.3 km, or <mark>a diameter of 6.6 km</mark>. Alvarez actually estimated the size using three other methods in addition to this one, and ultimately decided that the asteroid would be 10 &pm; 4 km in diameter (so anywhere from 6 to 14 km).
+
+<h2>The Aftermath</h2>
+<p>Luis Alvarez, Walter Alvarez, Frank Asaro, and Helen Michel published the paper <cite>Extraterrestrial Cause for the Cretaceous-Tertiary Extinction</cite> on June 6, 1980. This hypothesis was not well-received and generated a lot of controversy. A New York Times article published in 1985, titled <cite>DINOSAUR EXPERTS RESIST METEOR EXTINCTION IDEA</cite>, details some of the opposing views. At that year's Society of Vertebrate Paleontology conference, only 5 out of the 118 attendees believed an asteroid or comet caused the dinosaur extinction. Robert Bakker of Dinosaur Renaissance fame was especially opposed to this idea. From that same article, he is famously quoted as saying:</p>
+
+<blockquote>
+  "The arrogance of those people is simply unbelievable. They know next to nothing about how real animals evolve, live and become extinct. But despite their ignorance, the geochemists feel that all you have to do is crank up some fancy machine and you've revolutionized science. The real reasons for the dinosaur extinctions have to do with temperature and sea-level changes, the spread of diseases by migration and other complex events. But the catastrophe people don't seem to think such things matter. In effect, they're saying this: 'We high-tech people have all the answers, and you paleontologists are just primitive rock hounds.'"
+</blockquote>
+
+<p>Harsh words came from both sides, with Luis stating in a 1988 New York Times interview:</p>
+
+<blockquote>
+  "I don't like to say bad things about paleontologists, but they're really not very good scientists. They're more like stamp collectors."
+</blockquote>
+
+<p>Anyway, another decade would pass before the Chicxulub Crater was discovered beneath Mexico's Yucatan Peninsula*, providing practically irrefutable evidence for the impact hypothesis. Using the diameter of this actual crater, newer estimates for the impactor's size have emerged. It may have weighed 1-3 trillion tonnes, corresponding to diameters in the 10-14 km range (which is indeed within Alvarez's 10 &pm; 4 km allowance from the 1980 paper). How amazing is that?</p>
+<hr>
+<p>* You may have heard that Chicxulub Crater was discovered in 1978. Keep in mind that just because you found something doesn't mean you <em>discovered</em> it. To discover something, you need to both find it and <em>realize</em> that you have found something significant. Nobody made the connection between the crater and the impact until 1990.</p>
+</main>
+<hr>
+<footer>
+<p>Written November 16, 2025, posted on <time datetime="2026-11-14">November 14, 2026</time></p>
+</footer>
+</body>
+</html>
